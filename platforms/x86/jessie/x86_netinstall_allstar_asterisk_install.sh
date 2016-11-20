@@ -12,7 +12,7 @@
 # can this be moved to run BEFORE networking is started?
 apt-get remove nfs-common -y
 apt-get purge rpcbind -y
-apt-get autoremove -y
+#commited out by k5mob 19-nov-2016 apt-get autoremove -y
 echo "removed NFS and rpcbind" >>/var/log/install.log
 
 
@@ -43,7 +43,7 @@ apt-get upgrade -y
 echo "start DL of AllStar Asterisk install" >>/var/log/install.log
 
 cd /srv
-wget https://github.com/N4IRS/AllStar/raw/master/x86.tar.gz
+wget https://github.com/samuelrock/AllStar/raw/master/x86.tar.gz
 echo "download tar ball" >>/var/log/install.log
 
 # untar x86 script
