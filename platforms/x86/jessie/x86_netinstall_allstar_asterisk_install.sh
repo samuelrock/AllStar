@@ -43,7 +43,7 @@ apt-get upgrade -y
 echo "start DL of AllStar Asterisk install" >>/var/log/install.log
 
 cd /srv
-wget https://github.com/samuelrock/AllStar/blob/samuelrock-Stand-Alone-Jessie-Installer/x86.tar.gz
+wget https://github.com/samuelrock/AllStar/raw/samuelrock-Stand-Alone-Jessie-Installer/x86.tar.gz
 echo "download tar ball" >>/var/log/install.log
 
 # untar x86 script
