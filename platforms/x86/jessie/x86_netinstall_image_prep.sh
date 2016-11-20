@@ -1,10 +1,10 @@
 #!/bin/sh
 
 # DL firstboot script and put in in /usr/local/bin
-wget https://github.com/samuelrock/AllStar/blob/samuelrock-Stand-Alone-Jessie-Installer/platforms/x86/jessie/x86_netinstall_allstar_asterisk_install.sh -O /srv/x86_netinstall_allstar_asterisk_install.sh
+wget https://github.com/samuelrock/AllStar/raw/samuelrock-Stand-Alone-Jessie-Installer/platforms/x86/jessie/x86_netinstall_allstar_asterisk_install.sh -O /srv/x86_netinstall_allstar_asterisk_install.sh
 
 # DL firstboot rc.local patch and put in in /tmp
-wget https://github.com/samuelrock/AllStar/blob/samuelrock-Stand-Alone-Jessie-Installer/patches/patch-x86-first-netinstall-rc.local -O /tmp/patch-x86-first-netinstall-rc.local
+wget https://github.com/samuelrock/AllStar/raw/samuelrock-Stand-Alone-Jessie-Installer/patches/patch-x86-first-netinstall-rc.local -O /tmp/patch-x86-first-netinstall-rc.local
 
 # make the script executable
 chmod +x /srv/x86_netinstall_allstar_asterisk_install.sh
@@ -24,14 +24,14 @@ echo "rc.local modified to run x86_netinstall_allstar_asterisk_install.sh" >>/va
 #echo "removed sshd ipv6 listener" >>/var/log/install.log
 
 # disable exim4 daemon
-wget https://github.com/samuelrock/AllStar/blob/samuelrock-Stand-Alone-Jessie-Installer/patches/patch-exim4 -O /tmp/patch-exim4
+wget https://github.com/samuelrock/AllStar/raw/samuelrock-Stand-Alone-Jessie-Installer/patches/patch-exim4 -O /tmp/patch-exim4
 cd /etc/default/
 patch </tmp/patch-exim4
 echo "disabled exim4 daemon" >>/var/log/install.log
 
 # Disable /etc/network/interfaces
 # This could be a simple delete file
-wget https://github.com/samuelrock/AllStar/blob/samuelrock-Stand-Alone-Jessie-Installer/patches/patch-interfaces -O /tmp/patch-interfaces
+wget https://github.com/samuelrock/AllStar/raw/samuelrock-Stand-Alone-Jessie-Installer/patches/patch-interfaces -O /tmp/patch-interfaces
 cd /etc/network
 patch </tmp/patch-interfaces
 echo "Disabled /etc/network/interfaces" >>/var/log/install.log
