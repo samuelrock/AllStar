@@ -18,6 +18,10 @@ I started the mods to N4IRS scripting to make custom install files for our link 
 I do not plan on supporting this out side of the Louisiana Link System but if you have a use
 for what is posted by all means use it.
 
+Please remember I am not a script writer by trade, I am more of a script cut and paster! 
+I am only modifing what N4IRS has already made to more suit my needs, Please pass all the
+glory to him!
+
 K5MOB
 
 _______________________________________________________________________________________________
