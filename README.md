@@ -1,5 +1,26 @@
 # AllStar
-Patches and files to compile AllStar Asterisk on a Debian ARM amd64 and i386 Platforms
+_______________________________________________________________________________________________
+
+Patches and files to compile AllStar Asterisk on a Debian i386 Platforms.
+
+This is a work in progress that has been forked from N4IRS. The plan is to modify the scripting
+to make the installer run under a installation environment that is currently in production and 
+not destroy the current system. 
+
+If you are installing from a newly initialized drive you will be required to do a base install 
+of debian then run the asterisk installation script here. 
+
+This modified script is geared towards x86 platforms only, Thin Clients are cheaper and 
+more powerful than SBCs I see no need for SBCs as controllers. If your looking for SBC 
+installations you should use the original scripting and or images from N4IRS.
+
+I started the mods to N4IRS scripting to make custom install files for our link system.
+I do not plan on supporting this out side of the Louisiana Link System but if you have a use
+for what is posted by all means use it.
+
+K5MOB
+
+_______________________________________________________________________________________________
 
 Quick and dirty:
 
