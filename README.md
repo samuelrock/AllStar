@@ -1,7 +1,7 @@
 # AllStar
 _______________________________________________________________________________________________
 
-Patches and files to compile AllStar Asterisk on a Debian i386 Platforms.
+Patches and files to compile AllStar Asterisk on Debian i386 Platforms.
 
 This is a work in progress that has been forked from N4IRS. The plan is to modify the scripting
 to make the installer run under a installation environment that is currently in production and 
